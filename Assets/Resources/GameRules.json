@@ -1,0 +1,128 @@
+{
+	"Buildings":
+	[
+		{
+			"id": 1001, // 10XX id's for Buildings
+			"name": "Slot Machine",
+			"description": "This is a slot machine",
+			"icon": "slot_machine_img",
+			"baseCps": 1,
+			"basePrice": 10,
+			"revealAtAmount": 20,
+			"Upgrades" : [
+			{
+				"id": 100101, // 1001XX ids for upgrades for building 1001
+				"name": "Slot Machine Upgrade 1",
+				"description": "Slot Machine Upgrade 1",
+				"icon": "",
+				"itemID":1001,
+				"price":1000,
+				"bonusToCpS":2, // baseCps * bonus 
+				"bonusToPrice":0.9, // basePrice * bonus (10% discount) - not iplemented
+				"revealAtAmount":300
+			},
+			{
+				"id": 100102,
+				"name": "Slot Machine Upgrade 2",
+				"description": "Slot Machine Upgrade 2",
+				"icon": "",
+				"itemID":1001,
+				"price":5000,
+				"bonusToCpS":2, // baseCps * bonus 
+				"bonusToPrice":0.9, // basePrice * bonus (10% discount) - not iplemented
+				"revealAtAmount":2500
+			}
+			]
+		},
+		{
+			"id": 1002,
+			"name": "Bingo",
+			"description": "This is a Bingo Table",
+			"icon": "bingo_img",
+			"baseCps": 8, 
+			"basePrice": 1100,
+			"revealAtAmount": 500,
+			"Upgrades" : [
+			{
+				"id": 100201, 
+				"name": "Bingo Upgrade 1",
+				"description": "Bingo Upgrade 1",
+				"icon": "",
+				"itemID":1002,
+				"price":2500,
+				"bonusToCpS":2, // baseCps * bonus 
+				"bonusToPrice":0.9, // basePrice * bonus (10% discount) - not iplemented
+				"revealAtAmount":1200
+			},
+			{
+				"id": 100202,
+				"name": "Bingo Upgrade 2",
+				"description": "Bingo Upgrade 2",
+				"icon": "",
+				"itemID":1002,
+				"price":10000,
+				"bonusToCpS":2, // baseCps * bonus 
+				"bonusToPrice":0.9,  // basePrice * bonus (10% discount) - not iplemented
+				"revealAtAmount":5000
+			}
+			]
+		},
+		{
+			"id": 1003,
+			"name": "Blackjack",
+			"description": "This is a Blackjack table",
+			"icon": "blackjack_img",
+			"baseCps": 47,
+			"basePrice": 12000,
+			"revealAtAmount": 8000,
+			"Upgrades" : []
+		},
+		{
+			"id": 1004,
+			"name": "Roulette",
+			"description": "This is a Roulette table",
+			"icon": "roulette_img",
+			"baseCps": 260,
+			"basePrice": 130000,
+			"revealAtAmount": 90000,
+			"Upgrades" : []
+		},
+		{
+			"id": 1005,
+			"name": "Poker",
+			"description": "This is a Poker table",
+			"icon": "poker_img",
+			"baseCps": 1400,
+			"basePrice": 1400000,
+			"revealAtAmount": 1000000,
+			"Upgrades" : []
+		},
+	],
+	"Achievements ": [
+		{
+			"id": 9001, // 90XX id's for Achievements
+			"name": "First Slot Machine!!",
+			"description": "This is your first slot machine! YAY!",
+			"icon": "",
+			"requiredAsset":1001,
+			"amount":1
+		},
+		{
+			"id": 9002, // 90XX id's for Achievements
+			"name": "10 Slot Machines!",
+			"description": "These are your first 10 slot machines!",
+			"icon": "",
+			"requiredAsset":1001,
+			"amount":10
+		},
+		{
+			"id": 9003, // 90XX id's for Achievements
+			"name": "50 Slot Machines",
+			"description": "It's getting pretty crowded here. Maybe you should buy other things?",
+			"icon": "",
+			"requiredAsset":1001,
+			"amount":50
+		}
+		
+	]
+}
